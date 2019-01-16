@@ -1,12 +1,14 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, SafeAreaView, View } from 'react-native';
 
 export default class App extends React.Component {
   render() {
     return (
-      <View>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
+      <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>
+        <View style={{ flex: 1 }}>
+          <Text>Hello World!</Text>
+        </View>
+      </SafeAreaView>
     );
   }
 }
