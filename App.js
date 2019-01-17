@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { NativeRouter, Route } from 'react-router-native';
 import styled from 'styled-components/native';
 import LandingScreen from './src/components/screens/LandingScreen';
 
@@ -12,7 +12,9 @@ export default class App extends React.Component {
   render() {
     return (
       <StyledSafeAreaView>
-        <LandingScreen />
+        <NativeRouter>
+          <Route exact path="/" component={LandingScreen} />
+        </NativeRouter>
       </StyledSafeAreaView>
     );
   }
