@@ -1,14 +1,19 @@
 import React from 'react';
-import { Text, SafeAreaView, View } from 'react-native';
+import { Text, View } from 'react-native';
+import styled from 'styled-components/native';
+import LandingScreen from './src/components/screens/LandingScreen';
+
+const StyledSafeAreaView = styled.SafeAreaView`
+  flex: 1;
+  background-color: #fff;
+`;
 
 export default class App extends React.Component {
   render() {
     return (
-      <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>
-        <View style={{ flex: 1 }}>
-          <Text>Hello World!</Text>
-        </View>
-      </SafeAreaView>
+      <StyledSafeAreaView>
+        <LandingScreen />
+      </StyledSafeAreaView>
     );
   }
 }

@@ -6,6 +6,11 @@
     },
     "parser": "babel-eslint",
     "extends": ["airbnb", "plugin:react/recommended"],
+    "settings": {
+        "import/resolver": {
+          "babel-module": {}
+        }
+      },
     "rules": {
       "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
       "react/prefer-stateless-function": "off",
