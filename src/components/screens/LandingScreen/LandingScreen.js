@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { StyledView, StyledText } from 'constants/styles';
+import { CenterView, BasicText } from 'constants/styles';
 
 export default class LandingScreen extends Component {
   render() {
     return (
-      <StyledView>
-        <StyledText> StyledTextInComponent </StyledText>
-      </StyledView>
+      <CenterView>
+        <BasicText>Food Point</BasicText>
+        <BasicText>Sign up with email</BasicText>
+        <BasicText>Already have an account? Sign in.</BasicText>
+      </CenterView>
     );
   }
 }
